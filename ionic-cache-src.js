@@ -268,8 +268,7 @@
                             addSrc(getCacheDir() + cache[attrs.cacheSrc]);
                         }
                         $ionicPlatform
-                            .ready()
-                            .then(function() {
+                            .ready(function() {
                                 attrs.$observe('cacheSrc',
                                                function() {
                                                    // debugger;
